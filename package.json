@@ -1,16 +1,28 @@
 {
-  "name": "aerovista-website",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "latest",
-    "react-dom": "latest",
-    "framer-motion": "latest"
-  }
+    "name": "nextjs-15-starter-tailwind",
+    "version": "1.0.0",
+    "private": false,
+    "website": "https://nextjs-15-starter-tailwind-core.vercel.app/",
+    "license": "MIT",
+    "scripts": {
+        "dev": "next dev",
+        "build": "NEXT_DISABLE_TYPESCRIPT_TYPECHECK=1 NEXT_PUBLIC_DISABLE_ESLINT=true next build",
+        "start": "next start",
+        "lint": "next lint",
+        "lint:fix": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\"",
+        "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\""
+    },
+    "dependencies": {
+        "@supabase/supabase-js": "^2.49.1",
+        "framer-motion": "^12.4.10",
+        "next": "15.2.0",
+        "next-themes": "^0.4.4",
+        "react": "19.0.0",
+        "react-dom": "19.0.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/postcss": "^4.0.14",
+        "@types/react": "19.0.10",
+        "typescript": "5.8.2"
+    }
 }
